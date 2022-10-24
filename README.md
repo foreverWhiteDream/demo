@@ -33,3 +33,43 @@ git checkout 分支名
 git merge 分支名（此分支名是要拉取的分支，在那个分支下运行就是吧拉取分支合并到当前分支）
 
 冲突合并并手动修改提交时，提交本地库不用带文件名
+
+
+
+git.ignore配置文件（配置在windows家目录下）
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+hs_err_pid*
+
+.classpath
+.project
+.settings
+target
+.idea
+*.iml
+
+
+
+git主配置文件需要引用此文件
+[core]
+	excludesfile = C:/Users/PC-001/git.ignore
+
+
